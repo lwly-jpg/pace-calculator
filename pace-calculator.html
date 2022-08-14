@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Running Pace Calculator - Let's Run It</title>
+    <link rel="icon" href="https://res.cloudinary.com/letsdothiscom/image/upload/v1632498063/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="stylesheet" type="text/css" href="pace.css">
+
+</head>
+<body>
+    <div>
+    <h1>Running Pace Calculator by <span class="h1-colour">Let's Run It</span></h1>
+    <p>Use our handy calculator to find out what pace you need to run at for your next race.</p>
+    </div>
+    <div class="calc-outer-wrap">
+    <h3>Race distance:</h3>
+    <div>
+        <input class="field" type="number" placeholder="race distance" id="distance" value="0"/>
+        <select class="drop-down">
+            <option value="km">km</option>
+            <option value="miles">miles</option>
+        </select>
+    </div>
+    <h3>Target time:</h3>
+    <div>
+        <input class="field" type="number" placeholder="0" id="hours" value="0"/> hours 
+        <input class="field" type="number" placeholder="0" id="minutes" value="0"/> mins
+    </div>
+    <div><button class="button" id="calc_button">Calculate Pace</button></div>
+    <h3>Result:</h3>
+        
+    <div id="result"></div>
+</div>
+
+<div>
+    <div>
+        <h2>Why should I use a pace calculator?</h2>
+        <p>A pace calculator is a great tool to help you train and run more effectively.</p>
+
+    </div>
+    <div>
+        <h2>I'm happy with my pace, but need a race!</h2>
+        <p>Say no more... <a href="https://www.letsdothis.com"/>find a race</a>.</p>
+    </div>
+</div>  
+    
+
+    <script type="text/javascript" src="pace.js"></script>
+</body>
+
+</html>
