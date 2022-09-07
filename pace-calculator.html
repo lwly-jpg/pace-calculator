@@ -13,24 +13,25 @@
     <p>Use our handy calculator to find out what pace you need to run at for your next race.</p>
     </div>
     <div class="calc-outer-wrap">
-    <h3>Race distance:</h3>
-    <div>
-        <input class="field" type="number" placeholder="race distance" id="distance" value="0"/>
-        <select class="drop-down">
-            <option value="km">km</option>
-            <option value="miles">miles</option>
-        </select>
+        <h3>Race distance:</h3>
+        <div>
+            <input class="field" type="number" placeholder="race distance" id="distance"/>
+            <select class="drop-down" id="dropdown">
+                <option value="km">km</option>
+                <option value="miles">miles</option>
+            </select>
+        </div>
+        <h3>Target time:</h3>
+        <div>
+            <input class="field" type="number" placeholder="0" id="hours" min="0" max="99" value="0"/> hours 
+            <input class="field" type="number" placeholder="0" id="minutes" min="0" max="59" value="0"/> mins
+            <input class="field" type="number" placeholder="0" id="seconds" min="0" max="59" value="0"/> secs
+        </div>
+        <div><button class="button" id="calc_button">Calculate Pace</button></div>
+        <h3>Result:</h3>
+            
+        <div id="result"></div>
     </div>
-    <h3>Target time:</h3>
-    <div>
-        <input class="field" type="number" placeholder="0" id="hours" value="0"/> hours 
-        <input class="field" type="number" placeholder="0" id="minutes" value="0"/> mins
-    </div>
-    <div><button class="button" id="calc_button">Calculate Pace</button></div>
-    <h3>Result:</h3>
-        
-    <div id="result"></div>
-</div>
 
 <div>
     <div>
@@ -45,7 +46,7 @@
 </div>  
     
 
-    <script type="text/javascript" src="pace.js"></script>
+    <script type="text/javascript" src="pace-2.js"></script>
 </body>
 
 </html>
